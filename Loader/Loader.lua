@@ -33,12 +33,15 @@ local modules = {
     { name = "Entity Notifier", path = "notifications/notifier.lua" },
     { name = "Safety Guard",    path = "safety/protect.lua" },
     { name = "Figure Solver",   path = "figure/library_solver.lua" },
+    { name = "Auto Breaker",    path = "puzzle/breaker.lua" },
+    { name = "Seek Assist",     path = "seek/seekassist.lua" },
     { name = "Auto Walk",       path = "gotodoor/walk.lua" },
     { name = "Auto Closet",     path = "autocloset/closet.lua" },
     { name = "Key & Locks",     path = "autokey/keyhelper.lua" },
     { name = "Rooms & Economy", path = "roomsroute/roomshelper.lua" },
     { name = "ESP",             path = "esp/esp.lua" }
 }
+
 
 -- Поочередная загрузка скриптов (раз в 1 секунду)
 task.spawn(function()
